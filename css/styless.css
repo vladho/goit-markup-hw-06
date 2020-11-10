@@ -546,7 +546,32 @@ img {
   min-height: 581px;
   min-width: 528px;
 
+  padding: 12px;
   background-color: white;
+}
+.test {
+  position: relative;
+}
+.modal-svg {
+  position: absolute;
+  height: 18px;
+  width: 18px;
+
+  top: 0px;
+  left: 0px;
+}
+.modal-title {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
 }
 
 /*menu*/

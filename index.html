@@ -51,7 +51,34 @@
         </div>
         <div data-modal class="backdrop is-hidden">
           <div class="modal">
-            <h2>Оставьте свои данные, мы вам перезвоним</h2>
+            <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
+            <form class="modal-form">
+              <label for="name" class="label">Имя</label>
+              <div class="test">
+                <input type="text" name="name" id="name" />
+                <svg class="modal-svg">
+                  <use href="images/icon/sprite.svg#icon-name-icon1"></use>
+                </svg>
+              </div>
+              <label for="tel" class="label">Телефон</label>
+              <div class="test">
+                <input type="tel" name="tel" id="tel" />
+                <svg class="modal-svg">
+                  <use href="images/icon/sprite.svg#icon-tel-icon"></use>
+                </svg>
+              </div>
+              <label for="mail" class="label">Почта</label>
+              <div class="test">
+                <input type="email" name="mail" id="mail" />
+                <svg class="modal-svg">
+                  <use href="images/icon/sprite.svg#icon-envelope-icon"></use>
+                </svg>
+              </div>
+              <label for="comment">Комментарий</label>
+              <textarea name="comment" id="comment" rows="8" placeholder="Введите текст"></textarea>
+              <input type="checkbox" name="policy" id="policy" />
+              <button type="submit" class="modal-buttom">Отправить</button>
+            </form>
             <button class="hero-button-close" data-modal-close>
               <svg class="hero-button-close-svg">
                 <use href="./images/icon/sprite.svg#icon-close-icon"></use>
