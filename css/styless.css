@@ -582,14 +582,6 @@ img {
   position: relative;
   overflow: hidden;
 }
-/* .test {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: #2f303a;
-  transform: translateY(100%); */
 
 .categ-hidden-text {
   position: absolute;
@@ -608,23 +600,7 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transform: translateY(100%);
 }
-/* animation: animateY110 250ms infinite 250ms;
-}
 
-@keyframes animateY110 {
-  0% {
-    transform: translateY(0);
-  }
-
-  50% {
-    transform: translateY(100%);
-  }
-
-  100% {
-    transform: translateY(0);
-  }
-}
- */
 .categ-link {
   text-decoration: none;
   transition-duration: var(--transition-duration);
