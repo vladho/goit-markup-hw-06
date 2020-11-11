@@ -53,37 +53,43 @@
           <div class="modal">
             <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
             <form class="modal-form">
-              <label for="name" class="label">Имя</label>
-              <div class="test">
-                <input type="text" name="name" id="name" />
+              <label for="name" class="modal-label">Имя</label>
+              <div class="modal-input">
+                <input class="modal-field test" type="text" name="name" id="name" />
                 <svg class="modal-svg">
                   <use href="images/icon/sprite.svg#icon-name-icon1"></use>
                 </svg>
               </div>
-              <label for="tel" class="label">Телефон</label>
-              <div class="test">
-                <input type="tel" name="tel" id="tel" />
+              <label for="tel" class="modal-label">Телефон</label>
+              <div class="modal-input">
+                <input class="modal-field" type="tel" name="tel" id="tel" />
                 <svg class="modal-svg">
                   <use href="images/icon/sprite.svg#icon-tel-icon"></use>
                 </svg>
               </div>
-              <label for="mail" class="label">Почта</label>
-              <div class="test">
-                <input type="email" name="mail" id="mail" />
+              <label for="mail" class="modal-label">Почта</label>
+              <div class="modal-input">
+                <input class="modal-field" type="email" name="mail" id="mail" />
                 <svg class="modal-svg">
                   <use href="images/icon/sprite.svg#icon-envelope-icon"></use>
                 </svg>
               </div>
-              <label for="comment">Комментарий</label>
-              <textarea name="comment" id="comment" rows="8" placeholder="Введите текст"></textarea>
-              <input type="checkbox" name="policy" id="policy" />
-              <button type="submit" class="modal-button">Отправить</button>
+              <label class="modal-label" for="comment">Комментарий</label>
+              <textarea class="modal-textarea" name="comment" id="comment" rows="5" placeholder="Введите текст"></textarea>
+              <div class="modal-policy">
+                <input class="modal-policy-submit" type="checkbox" name="policy" id="policy" />
+                <label class="modal-label-policy" for="policy">Соглашаюсь с рассылкой и принимаю <a href="./" class="modal-link"> Условия договора</a></label>
+              </div>
+
+              <button class="hero-button-close" data-modal-close>
+                <svg class="hero-button-close-svg">
+                  <use href="./images/icon/sprite.svg#icon-close-icon"></use>
+                </svg>
+              </button>
+              <div class="button-submit">
+                <button type="submit" class="button first">Отправить</button>
+              </div>
             </form>
-            <button class="hero-button-close" data-modal-close>
-              <svg class="hero-button-close-svg">
-                <use href="./images/icon/sprite.svg#icon-close-icon"></use>
-              </svg>
-            </button>
           </div>
         </div>
       </section>
@@ -343,8 +349,8 @@
             </ul>
           </address>
         </div>
-        <div class="footer-social footer-list">
-          <h2 class="footer-join">присоединяйтесь</h2>
+        <div class="footer-social footer-list footer-block">
+          <h2 class="footer-title-join">присоединяйтесь</h2>
           <ul class="list social-icons">
             <li class="social-icons-item">
               <a href="https://instagram.com/" class="social-icons-link footer-icon-link" target="_blank" rel="noopener noreferer" aria-label="Instagram">
@@ -375,6 +381,18 @@
               </a>
             </li>
           </ul>
+        </div>
+        <div class="footer-social">
+          <h2 class="footer-title-sign">Подпишитесь на рассылку</h2>
+          <form class="footer-form">
+            <input class="footer-input" type="email" placeholder="E-mail" />
+            <button class="button first">
+              Подписаться
+              <svg class="footer-svg">
+                <use href="./images/icon/sprite.svg#icon-fly-icon"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
